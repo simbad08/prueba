@@ -1,0 +1,114 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body,
+	html {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		background: #60a3bc !important;
+		}
+
+form {
+    width: 340px;
+	height: 380px;
+	background: #F9B327;
+	margin-top: 120px;
+	text-align: center;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*.contenedor_logo{
+	position: absolute;
+	height: 170px;
+	width: 170px;
+	top: -75px;
+	border-radius: 60%;
+	background: #60a3bc;
+	padding: 10px;
+	text-align: center;
+}
+.brand_logo {
+	height: 150px;
+	width: 150px;
+	border-radius: 60%;
+	border: 2px solid white;
+}*/
+#img{
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	margin-top: -100px;
+	border: 2px solid black;
+}
+#usuario{
+	width: 90%;
+	height: 40px;
+	margin-top: 30px; 
+	background: url(usuario1.png) 15px no-repeat white;
+	text-indent: 30px;
+	font-size: 16px;
+	top: 18px;
+}
+#usuario:focus{
+	background: url(usuario1.png) 15px no-repeat white;
+
+
+}
+#contraseña{
+	width: 90%;
+	height: 40px;
+	background: url(contraseña.png) 15px no-repeat white;
+	text-indent: 30px;
+	font-size: 16px;
+	top: 18px;
+}
+#iniciar{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	top: 35px;
+	font-size: 18px;
+}
+.login input[type="checkbox"]{
+	display: none;
+}
+.login .checkbox label{
+	color: #0774D9;
+	padding: 5px 15px 5px 51px;
+	display: inline-block;
+	position: relative;
+	font-size: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease; 
+}
+.login .checkbox label:hover{
+	background: rgba(0,116,217,0.2);
+}
+.login .checkbox label:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: none;
+	border: 3px solid #0774D9;
+	border-radius: 3px;
+	position: absolute;
+	left: 20px;
+}
+.login input[type="checkbox"]:checked + label{
+	padding: 5px 15px;
+	background: #0774D9;
+	border-radius: 2px;
+	color: white;
+}
+.login input[type="checkbox"]:checked + label:before{
+	display: none;
+}

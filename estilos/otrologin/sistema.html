@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Creación de Usuarios Sistema Cuentame</title>
+    <link rel="stylesheet" type="text/css" href="sistema.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/maxLength.js"></script>
+    <script> 
+        $(function(){
+            $('#nombre,#apellidos,#usuario').maxLength(18);
+        });
+    </script>
+    <script> 
+        $(function(){
+            $('#documento,#ticket').maxLength(15);
+        });
+    </script>
+        <script> 
+        $(function(){
+            $('#email').maxLength(20);
+        });
+    </script>
+</head>
+<body>
+	<h1><center>Formato de Creación de Usuarios</center></h1>
+    <h1><center>Sistema Cuentame</center></h1>
+    <img src="logoicbf.png" id="img">
+	<center><form>
+		<div class="form-group" align="center">
+        <label for="No. de Documento"class="col-5 col-form-label">Numero de Ticket</label>
+        <input type="text" class="form-control col-5" id="documento" name="ticket" placeholder=" No. de Ticket">
+        </div>
+		<div class="form-group" align="center">
+        <label for="cargo" id="car" class="col-5 col-form-label">Tipo de Documento</label>
+        <select class="form-control col-5" name="tipo" id="tipo">
+            <option>CC</option>
+            <option>PE</option>
+            <option>PA</option>
+        </select>
+        </div>
+        <div class="form-group" align="center">
+        <label for="No. de Documento"class="col-5 col-form-label">Numero de Documento</label>
+        <input type="text" class="form-control col-5" id="documento" name="documento" placeholder=" No. documento">
+        </div>
+		<div class="form-group" align="center">
+        <label for="Nombre" id="nom" class="col-2 col-form-label">Nombres Completos</label>
+        <input type="text" class="form-control col-5" id="nombre" name="nombres" placeholder="nombre">
+        </div>
+        <div class="form-group" align="center">
+        <label for="Apellidos" class="col-2 col-form-label">Apellidos Completos</label>
+        <input type="text" class="form-control col-5" id="apellidos" name="apellidos" placeholder="apellidos">
+        </div>
+        <div class="form-group" align="center">
+        <label for="cargo" id="car" class="col-5 col-form-label">Rol</label>
+        <select class="form-control col-5" name="tipo" id="tipo">
+            <option>PI Usuario Nacional</option>
+            <option>PI Usuario Regional</option>
+            <option>PI Consulta EAS</option>
+            <option>PI Usuario EAS</option>
+            <option>PI Usuario Consulta</option>
+        </select>
+        </div>
+        <div class="form-group" align="center">
+        <label for="email"class="col-5 col-form-label">Correo Electronico</label>
+        <input type="text" class="form-control col-5" id="email" name="email" placeholder="email">
+        </div>
+        <div class="form-group" align="center">
+        <label for="No. de Documento"class="col-5 col-form-label">Usuario</label>
+        <input type="text" class="form-control col-5" id="usuario" name="usuario" placeholder="usuario">
+        </div>
+        <div class="form-group" align="center">
+        <label for="cargo" id="car" class="col-5 col-form-label">Rol</label>
+        <select class="form-control col-5" name="roli" id="roli">
+            <option>Nacional</option>
+            <option>Regional</option>
+            <option>Centro Zonal</option>
+            <option>Entidad Contratista</option>
+        </select>
+        </div>
+        <div class="form-group" align="center">
+        <label for="cargo" id="car" class="col-5 col-form-label">Regional</label>
+        <select class="form-control col-5" name="roli" id="roli">
+            <option>Amazonas</option>
+            <option>Antioquia</option>
+            <option>Arauca</option>
+            <option>Atlantico</option>
+            <option>Bogota D.C</option>
+            <option>Bolivar</option>
+            <option>Boyaca</option>
+            <option>Caldas</option>
+            <option>Caqueta</option>
+            <option>Casanare</option>
+            <option>Cauca</option>
+            <option>Cesar</option>
+            <option>Choco</option>
+            <option>Cordoba</option>
+            <option>Cundinamarca</option>
+            <option>Guainia</option>
+            <option>Guaviare</option>
+            <option>Huila</option>
+            <option>La Guajira</option>
+            <option>Magdalena</option>
+            <option>Meta</option>
+            <option>Nariño</option>
+            <option>Norte De Santander</option>
+            <option>Putumayo</option>
+            <option>Quindio</option>
+            <option>Risaralda</option>
+            <option>San Andres</option>
+            <option>Santander</option>
+            <option>Sucre</option>
+            <option>Tolima</option>
+            <option>Valle Del Cauca</option>
+            <option>Vaupes</option>
+            <option>Vichada</option>
+        </select>
+        </div>
+        <div class="form-group" align="center">
+        <label for="No. de Documento"class="col-5 col-form-label">Tipo Documento Entidad Contratista</label>
+        <input type="text" class="form-control col-5" id="documento" name="documento" placeholder="Tipo Documento Entidad Contratista">
+        </div>
+        <div class="form-group" align="center">
+        <label for="No. de Documento"class="col-5 col-form-label">Numero de Documento Entidad Contratista</label>
+        <input type="text" class="form-control col-5" id="documento" name="entidad" placeholder=" No.Documento Entidad Contratista">
+        </div>
+	</form></center>
+
+</body>
+</html>
